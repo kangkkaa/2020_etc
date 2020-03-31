@@ -1,0 +1,33 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	<style>
+		.high_light_0 { background:Yellow; }
+		.high_light_1 { background:Orange; }
+		.high_light_2 { background:Blue; }
+		.high_light_3 { background:Green; }
+		.high_light_4 { background:Red; }
+	</style>
+<script src="http://code.jquery.com/jquery-1.7.js"></script>
+<script>
+	$(document).ready(function() {
+		var object ={};
+		object.name = 'RintIanTta';
+		object.gender = 'Male';
+		object.part = 'Second Guitar';
+	});
+</script>
+<body>
+<h1>item - 0</h1>
+<h1>item - 1</h1>
+<h1>item - 2</h1>
+<h1>item - 3</h1>
+<h1>item - 4</h1>
+<a href="nano/index.php">나노</a>  
+<?php
+ $ref=$_SERVER['HTTP_REFERER'];
+ echo "ref=" . $ref;
+ ?>
+</body>
+</html>

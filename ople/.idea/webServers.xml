@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="827b1ead-75c6-4b51-b5c5-a7dccfacc57e" name="oplecom" url="http://66.209.90.19">
+        <fileTransfer host="66.209.90.19" port="22" rootFolder="/ssd/html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7327d6e8-36ab-469c-8f0a-460497079d6e" name="allthatmall" url="http://115.68.110.184">
+        <fileTransfer host="115.68.110.184" port="21" rootFolder="/usr/local/apache/htdocs">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

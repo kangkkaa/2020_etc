@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4732f387-e841-4c38-bd73-8d15dbf52918" name="test_sj" url="http://devtestsj.admixm.com">
+        <fileTransfer host="222.112.8.122" port="2222" rootFolder="/home/test_sj" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="2222" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

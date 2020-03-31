@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE> New Document </TITLE>
+</HEAD>
+<script type="text/javascript" src="ZeroClipboard.js"> </script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"> </script>
+<script type="text/javascript">
+//	var $ = document.getElementById;
+	$(function(){
+		initClipBoard();
+	});
+
+	function initClipBoard(){
+		var clipBoard = null;
+		
+		clipBoard = new ZeroClipboard.Client();
+
+		//cursor hand type 
+		clipBoard.setHandCursor( true );			
+		//swf
+		ZeroClipboard.setMoviePath("ZeroClipboard.swf");
+
+		//버튼 활성화
+		clipBoard.glue('copyContentBtn');
+		
+		//마우스 클릭시에 이벤트 발생. - CLIPBOARD에 저장한다.
+		clipBoard.addEventListener('mouseOver', function (client) {
+			clipBoard.setText( $("#content").val() );
+		});
+		//COPY완료시에 발생할 CALLBACK함수.
+		clipBoard.addEventListener('complete', function (client) {
+			alert("클립보드에 복사되었습니다. \'Ctrl+V\'를 눌러 붙여넣기 해주세요.");
+		});		
+	}
+</script>
+<BODY>
+<div id="">
+	<IMG SRC="btn_scrap.gif" id="copyContentBtn">
+</div>
+	<textarea id="content"></textarea>
+</BODY>
+</HTML>
